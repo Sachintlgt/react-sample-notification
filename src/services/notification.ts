@@ -32,11 +32,10 @@ export const readNotification = async (id: string) => {
   }
 };
 
-export const getAllUnreadNotifications = async () => {
+export const getAllNotifications = async () => {
   try {
     const q = query(
       collection(db, "notifications"),
-      where("read", "==", false),
       orderBy("timestamp", "desc")
     );
     return getDocs(q);

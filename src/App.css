@@ -9,14 +9,11 @@
   cursor: pointer;
   margin: 2rem auto;
   color: #fff;
+  background: red;
+}
+.notifications-item.read {
+  background: #ccc;
 }
 .notifications-item:hover {
   background: grey!important;
-}
-
-.notifications-container .notifications-item:nth-child(odd) {
-  background-color: red;
-}
-.notifications-container .notifications-item:nth-child(even) {
-  background-color: green;
 }
