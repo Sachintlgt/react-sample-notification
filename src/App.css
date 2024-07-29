@@ -1,0 +1,22 @@
+.App {
+  text-align: center;
+}
+.notifications-container {
+  width: 120px;
+  margin: auto;
+}
+.notifications-item {
+  cursor: pointer;
+  margin: 2rem auto;
+  color: #fff;
+}
+.notifications-item:hover {
+  background: grey!important;
+}
+
+.notifications-container .notifications-item:nth-child(odd) {
+  background-color: red;
+}
+.notifications-container .notifications-item:nth-child(even) {
+  background-color: green;
+}
